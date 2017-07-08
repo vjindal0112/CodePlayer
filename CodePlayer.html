@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CodePlayer</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type = "text/javascript" src="jquery.min.js">
+		</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+		</script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+		
+		<link type="text/css" rel="stylesheet" href="CodePlayer.css"/>
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<p>CodePlayer</p>
+				<ul id="tabToggle">
+					<li class="toggle selected" style="margin-left:-40px; border-bottom-left-radius:5px; border-top-left-radius:5px">HTML</li>
+					<li class="toggle">CSS</li>
+					<li class="toggle">JS</li>
+					<li class="toggle selected" style="border-bottom-right-radius:5px; border-top-right-radius:5px">Result</li>
+				</ul>
+				<button id="runButton">Run</button>
+			</div>
+			<div class="tabs" id="HTMLTab">
+				<textarea id="HTMLCode"></textarea>
+				<div>HTML</div>
+			</div>
+			<div class="tabs" id="CSSTab">
+				<textarea id="CSSCode"></textarea>
+				<div>CSS</div>
+			</div>
+			<div class="tabs" id="JSTab">
+				<textarea id="JSCode"></textarea>
+				<div>JS</div>
+			</div>
+			<div class="tabs" id="ResultTab" style="border-right:none">
+				<iframe id='resultFrame'></iframe>
+				<div>Result</div>
+			</div>
+		</div>
+	
+	<script src="CodePlayer.js"></script>
+	</body>
+</html>

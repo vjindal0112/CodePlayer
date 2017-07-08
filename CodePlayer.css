@@ -1,0 +1,129 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper {
+	font-family: helvetica;
+	height: 100%;
+	width: 100%;
+}
+
+#header {
+	background-color:#E3E3E3;
+	width: 100%;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #A2A2A2;
+}
+#header p {
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 10px 0 0 10px;
+	float: left;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width:100%;
+}
+
+#tabToggle {
+	position: absolute;
+	width: 170.9px;
+	border-radius: 6px;
+	float: left;
+	border: 1px solid #A2A2A2;
+	height: 30px;
+	margin-top: 4px;
+	left: 50%;
+	margin-left: -120px;
+	list-style: none;
+}
+
+#tabToggle li {
+	float: left;
+	padding: 5px 7px 4px 7px;
+	border-right: 1px solid #A2A2A2;
+	font-size: 1.08em;
+	margin:0;
+}
+
+#tabToggle li:nth-child(4) {
+	border-right: none;
+}
+
+#header button {
+	float: right;
+	border-radius: 10px;
+	width: 60px;
+	height: 30px;
+	font-size: 1.15em;
+	margin-top: 4px;
+	margin-right: 15px;
+	background-color: #B3B3B3;
+}
+
+.tabs {
+	position: relative;
+	border-right: 1px solid #A2A2A2;
+	float: left;
+	padding:0;
+	padding-bottom:6px;
+	margin:0;
+	width:50%;
+	box-sizing: border-box;
+}
+
+.tabs div {
+	border: 1px solid #A2A2A2;
+	border-radius: 5px;
+	position:absolute;
+	top: 10px;
+	right: 15px;
+	background-color: white;
+	z-index: 100;
+}
+
+.tabs textarea {
+	padding: 8px;
+	height: 100%;
+	width: 99%;
+	border: none;
+	resize: none;
+	padding-bottom:0;
+	font-family:monotype;
+	box-sizing:border-box;
+}
+
+.tabs textarea:focus{
+	outline:none;
+}
+
+#CSSTab {
+	display: none;
+}
+
+#JSTab {
+	display:none;
+}
+
+iframe {
+	height: 99%;
+	border:none;
+}
+
+.selected {
+	background-color: #797979;
+}
+
+#runButton {
+	outline:none;
+}
+
+
+	
